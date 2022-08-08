@@ -1,0 +1,127 @@
+main {
+	display: grid;
+	grid-template-areas: "text-area final-text-area";
+	grid-template-columns: 2fr 450px;
+	gap: 20px;
+	min-height: 88vh;
+	padding: 35px 5%;
+
+	border: 1px solid blue;
+}
+
+.text-area,
+.final-text-area {
+	border-radius: 32px;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.12);
+	padding: 32px;
+	flex-basis: 1 1 auto;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	text-align: center;
+	padding: 0 10px;
+}
+
+/* textarea */
+textarea {
+	background: none;
+	border: none;
+	font-size: 20px;
+	height: 100%;
+	margin-bottom: 10px;
+	padding: 15px;
+	resize: none;
+	width: 100%;
+}
+
+/* Text area */
+.text-area {
+	background: #d2d9f1;
+	grid-area: text-area;
+}
+
+/* Final text area */
+.final-text-area {
+	background: #ffffff;
+	grid-area: final-text-area;
+}
+
+/* Without text */
+.without-text {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.without-text p {
+	color: #343a40;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.without-text img,
+.without-text p {
+	width: 100%;
+}
+
+/* With text */
+.with-text {
+	display: none;
+}
+
+/* Button */
+.box-button {
+	display: flex;
+	width: 100%;
+}
+
+.box-button button {
+	border-radius: 24px;
+	font-size: 20px;
+	font-weight: 500;
+	height: 55px;
+	width: 100%;
+	border: 1px solid red;
+}
+
+/* Media queries */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	main {
+		grid-template-areas: "text-area" "final-text-area";
+		grid-template-columns: 1fr;
+		grid-template-rows: 2fr 1fr;
+	}
+
+	.text-area {
+		height: 100%;
+		width: 100%;
+	}
+
+	.without-text img {
+		display: none;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.without-text img {
+		display: none;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
