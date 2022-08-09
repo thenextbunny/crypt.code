@@ -20,7 +20,6 @@ main {
 	flex-direction: column;
 	min-height: 100%;
 	justify-content: space-between;
-
 	padding: 20px;
 }
 
@@ -163,6 +162,10 @@ div.with-text {
 	.container {
 		grid-template-areas: "field-text-area" "final-text-area";
 		grid-template-columns: 100%;
+	}
+
+	.without-text img {
+		display: none;
 	}
 }
 
