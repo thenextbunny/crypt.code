@@ -1,3 +1,4 @@
+/* Style */
 import "./Main.css";
 
 /* Images */
@@ -138,9 +139,9 @@ function Main() {
 
 	return (
 		<main>
-			<div className="text-area">
-				<div className="container">
-					<textarea name="text" id="text" placeholder="Digite um texto que você deseja criptografar ou descriptografar"></textarea>
+			<div className="container">
+				<div className="field-text-area">
+					<textarea name="text" id="text" placeholder="Digite um texto para criptografar ou descriptografar"></textarea>
 					<div className="box-button">
 						<button id="encrypt" onClick={encrypt}>
 							Criptografar
@@ -150,47 +151,35 @@ function Main() {
 						</button>
 					</div>
 				</div>
-			</div>
-			<div className="final-text-area">
-				<div className="container without-text">
-					<img src={Girl} />
-					<p>Nenhuma mensagem foi encontrada</p>
-				</div>
-				<div className="container with-text">
-					<textarea name="final-text" id="final-text" readOnly></textarea>
-					<div className="box-button">
-						<button id="copyText" onClick={copyText}>
-							Copiar
-						</button>
+				<div className="final-text-area">
+					<div className="without-text">
+						<img src={Girl} alt="Uma ilustração de uma pessoa segurando uma lupa para visualizar um diamante." />
+						<p>Nenhuma mensagem foi encontrada</p>
+					</div>
+					<div className="with-text">
+						<textarea name="final-text" id="final-text" readOnly></textarea>
+						<div className="box-button">
+							<button id="copyText" onClick={copyText}>
+								Copiar
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
 	);
-	/*<main>
+
+	/* <main>
 			<div className="text-area">
 				<div className="container">
-					<textarea name="text" id="text" placeholder="Digite um texto para criptografar ou descriptografar" required></textarea>
-					<div className="field-button">
-						<button id="encrypt" onClick={encrypt}>
-							Criptografar
-						</button>
-						<button id="decrypt" onClick={decrypt}>
-							Descriptografar
-						</button>
-					</div>
+					
+				<div className="final-text-area">
+					
+				</div>
 				</div>
 			</div>
-			<div className="final-text-area">
-				<div className="container">
-					<div className="without-text">
-						
-					</div>
-					<div className="with-text">
-						<textarea name="final-text" id="final-text" readOnly></textarea>
-					</div>
-				</div>
-			</div> */
+			
+		</main> */
 }
 
 export default Main;

@@ -6,7 +6,7 @@ const Header = () => {
 		<header>
 			<h1>
 				<img src={Logo} alt="Alura" />
-				<span>en.de(crypt)</span>
+				<span>crypt.code</span>
 			</h1>
 		</header>
 	);

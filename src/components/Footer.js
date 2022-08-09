@@ -6,7 +6,7 @@ function Footer() {
 			<div className="tnb">
 				<div className="tnb-text">
 					<p>
-						Um projeto da <strong>Oracle + Alura</strong>
+						Um projeto da <strong>Oracle Next Education + Alura</strong>
 					</p>
 					<p>
 						Desenvolvido por <strong>Vitor Coelho</strong>

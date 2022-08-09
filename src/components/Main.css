@@ -1,46 +1,32 @@
 main {
-	display: grid;
-	grid-template-areas: "text-area final-text-area";
-	grid-template-columns: 2fr 450px;
-	gap: 20px;
+	display: inline-flex;
 	min-height: 88vh;
-	padding: 35px 5%;
-
-	border: 1px solid blue;
-}
-
-.text-area,
-.final-text-area {
-	border-radius: 32px;
-	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.12);
-	padding: 32px;
-	flex-basis: 1 1 auto;
-}
-
-.container {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	text-align: center;
-	padding: 0 10px;
-}
-
-/* textarea */
-textarea {
-	background: none;
-	border: none;
-	font-size: 20px;
-	height: 100%;
-	margin-bottom: 10px;
-	padding: 15px;
-	resize: none;
+	padding: 10px 5% 32px;
 	width: 100%;
 }
 
-/* Text area */
-.text-area {
-	background: #d2d9f1;
-	grid-area: text-area;
+.container {
+	display: grid;
+	gap: 20px;
+	grid-template-areas: "field-text-area final-text-area";
+	grid-template-columns: minmax(max-content, auto) minmax(max-content, 450px);
+	width: 100%;
+}
+
+.field-text-area,
+.final-text-area {
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	justify-content: space-between;
+
+	padding: 20px;
+}
+
+.field-text-area {
+	background: #e9ecf8;
+	grid-area: field-text-area;
 }
 
 /* Final text area */
@@ -49,57 +35,110 @@ textarea {
 	grid-area: final-text-area;
 }
 
-/* Without text */
-.without-text {
-	align-items: center;
-	display: flex;
-	justify-content: center;
-}
-
-.without-text p {
-	color: #343a40;
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 29px;
-}
-
-.without-text img,
-.without-text p {
+/* textarea */
+textarea {
+	background: none;
+	border: none;
+	font-size: 18px;
+	flex: 1 1 auto;
+	min-height: 100px;
+	margin-bottom: 15px;
+	resize: vertical;
+	padding: 5px;
 	width: 100%;
 }
 
-/* With text */
-.with-text {
-	display: none;
+textarea:focus {
+	outline: none;
+}
+
+textarea::placeholder {
+	color: #343a40;
+	font-size: 20px;
+}
+
+/* Designing for scroll-bar */
+textarea::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+textarea::-webkit-scrollbar-track {
+	background: #ced4da;
+	border-radius: 5px;
+}
+
+/* Handle */
+textarea::-webkit-scrollbar-thumb {
+	background: #343a40;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+textarea::-webkit-scrollbar-thumb:hover {
+	background: #495057;
 }
 
 /* Button */
 .box-button {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	height: auto;
+	justify-content: space-around;
 	width: 100%;
 }
 
 .box-button button {
-	border-radius: 24px;
+	border: 2px solid #0a3871;
+	border-radius: 20px;
 	font-size: 20px;
 	font-weight: 500;
-	height: 55px;
-	width: 100%;
-	border: 1px solid red;
+	flex-grow: 1;
+	height: 40px;
+	padding: 0 10px;
+}
+
+button#encrypt {
+	background: #0a3871;
+	color: #ffffff;
+}
+
+button#decrypt,
+button#copyText {
+	background: #ffffff;
+	color: #0a3871;
+}
+
+/* With and without text */
+.without-text,
+.with-text {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	text-align: center;
+}
+
+/* Without text */
+.without-text {
+	color: #343a40;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+/* With text */
+div.with-text {
+	display: none;
 }
 
 /* Media queries */
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-	main {
-		grid-template-areas: "text-area" "final-text-area";
-		grid-template-columns: 1fr;
-		grid-template-rows: 2fr 1fr;
-	}
-
-	.text-area {
-		height: 100%;
-		width: 100%;
+	.container {
+		grid-template-areas: "field-text-area" "final-text-area";
+		grid-template-columns: 100%;
 	}
 
 	.without-text img {
@@ -109,6 +148,13 @@ textarea {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.container {
+		grid-template-areas: "field-text-area" "final-text-area";
+		grid-template-columns: 100%;
+
+		border: 1px solid blue;
+	}
+
 	.without-text img {
 		display: none;
 	}
