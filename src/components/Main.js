@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 /* Style */
 import "./Main.css";
 
@@ -27,7 +29,7 @@ function Main() {
 		["q", "070 "],
 		["r", "080 "],
 		["s", "090 "],
-		["t", "000 "],
+		["t", "088 "],
 		["u", "017 "],
 		["v", "094 "],
 		["w", "033 "],
@@ -93,26 +95,27 @@ function Main() {
 		[" ", " "],
 	];
 
+	const [textEntry, settextEntry] = useState("");
+
+	const handleText = (event) => {
+		settextEntry(event.target.value);
+	};
+
+	let text = textEntry;
+
 	const encrypt = () => {
-		let text = document.getElementById("text").value;
-
 		alphabetAndEncryption.forEach((element) => {
-			let replaceText = element[1];
-
-			text = replaceAll(text, element[0], replaceText);
+			text = replaceAll(text, element[0], element[1]); // [0] = letter, [1] = code
 		});
 		return showText(text);
 	};
 
 	const decrypt = () => {
-		let text = document.getElementById("text").value;
+		text = text.concat(" ");
 
 		for (let i = 0; i < alphabetAndEncryption.length; i++) {
-			let replaceText = alphabetAndEncryption[i][1];
-
-			text = replaceAll(text, replaceText, alphabetAndEncryption[i][0]);
+			text = replaceAll(text, alphabetAndEncryption[i][1], alphabetAndEncryption[i][0]); // [0] = letter, [1] = code
 		}
-
 		return showText(text);
 	};
 
@@ -141,7 +144,7 @@ function Main() {
 		<main>
 			<div className="container">
 				<div className="field-text-area">
-					<textarea name="text" id="text" placeholder="Digite um texto para criptografar ou descriptografar"></textarea>
+					<textarea name="text" id="text" placeholder="Digite um texto para criptografar ou descriptografar" onChange={handleText} value={textEntry}></textarea>
 					<div className="box-button">
 						<button id="encrypt" onClick={encrypt}>
 							Criptografar
