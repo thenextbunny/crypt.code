@@ -1,5 +1,10 @@
 import "./Footer.css";
 
+/* Images */
+import GitHub from "../assets/images/github.svg";
+import LinkedIn from "../assets/images/linkedin.svg";
+import Email from "../assets/images/email.svg";
+
 function Footer() {
 	return (
 		<footer>
@@ -15,18 +20,18 @@ function Footer() {
 				<div className="tnb-icons">
 					<span>
 						<a href="http://github.com/thenextbunny" target="_blank" rel="noopener noreferrer">
-							<img src="/github.svg" alt="Perfil do Vitor Coelho no GitHub" />
+							<img src={GitHub} alt="Perfil do Vitor Coelho no GitHub" />
 						</a>
 					</span>
 
 					<span>
 						<a href="https://www.linkedin.com/in/vitorcoelhot/" target="_blank" rel="noopener noreferrer">
-							<img src="/linkedin.svg" alt="Perfil do LinkedIn do Vitor Coelho" />
+							<img src={LinkedIn} alt="Perfil do LinkedIn do Vitor Coelho" />
 						</a>
 					</span>
 					<span>
 						<a href="mailto:vitorcoelhosilvat@gmail.com" target="_blank" rel="noopener noreferrer">
-							<img src="/email.svg" alt="Email do Vitor Coelho" />
+							<img src={Email} alt="Email do Vitor Coelho" />
 						</a>
 					</span>
 				</div>
