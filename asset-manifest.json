@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/crypt.code/static/css/main.96d707be.css",
+    "main.js": "/crypt.code/static/js/main.9ba3471e.js",
+    "static/js/787.f4d7758f.chunk.js": "/crypt.code/static/js/787.f4d7758f.chunk.js",
+    "static/media/girl search.svg": "/crypt.code/static/media/girl search.cd57497a937c57681e0c30c45b9d3db9.svg",
+    "static/media/logo.svg": "/crypt.code/static/media/logo.474f68750815bf5c6cd2a815c9e0f525.svg",
+    "index.html": "/crypt.code/index.html",
+    "main.96d707be.css.map": "/crypt.code/static/css/main.96d707be.css.map",
+    "main.9ba3471e.js.map": "/crypt.code/static/js/main.9ba3471e.js.map",
+    "787.f4d7758f.chunk.js.map": "/crypt.code/static/js/787.f4d7758f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96d707be.css",
+    "static/js/main.9ba3471e.js"
+  ]
+}
