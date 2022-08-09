@@ -1,5 +1,5 @@
 <div align="center">
-  <h2 >
+  <br>
   <h1>crypt.code</h1>
 </div>
 <div>
@@ -11,7 +11,7 @@
 
 ### [👀 Clique aqui para visualizar a página final do projeto](https://thenextbunny.github.io/crypt.code/)
 
-  <h3>🔍 Biblioteca e linguagens utilizadas</h3>
+  <h3>🖇️ Biblioteca e linguagens utilizadas</h3>
   <ul>
     <li>HTML5</li>
     <li>CSS3</li>
