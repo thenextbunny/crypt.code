@@ -14,7 +14,7 @@ function Footer() {
 						Um projeto da <strong>Oracle Next Education + Alura</strong>
 					</p>
 					<p>
-						Desenvolvido por <strong>Vitor Coelho</strong>
+						Desenvolvido por <strong>Vitor Coelho</strong> com React
 					</p>
 				</div>
 				<div className="tnb-icons">

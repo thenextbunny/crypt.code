@@ -9,7 +9,7 @@ main {
 	display: grid;
 	gap: 20px;
 	grid-template-areas: "field-text-area final-text-area";
-	grid-template-columns: minmax(max-content, auto) minmax(max-content, 450px);
+	grid-template-columns: minmax(max-content, auto) minmax(300px, 450px);
 	width: 100%;
 }
 
@@ -125,11 +125,6 @@ button#copyText {
 	color: #343a40;
 	font-size: 24px;
 	font-weight: 700;
-}
-
-/* With text */
-div.with-text {
-	display: none;
 }
 
 /* Media queries */
