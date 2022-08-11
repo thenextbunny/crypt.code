@@ -3,7 +3,7 @@
   <h1>crypt.code</h1>
 </div>
 <div>
-  <h3>🏗️ Estou aprendendo React e este é meu primeiro projeto. Estou trazendo melhorias constantes ao longo do meu aprendizado.</h3>
+  <h3>🏗️ Estou aprendendo React e este é meu primeiro projeto utilizando a biblioteca. Estou trazendo melhorias constantes ao longo do meu aprendizado.</h3>
   
   <h3>ℹ️ Sobre o projeto</h3>
   <p>Desafio proposto durante o programa <a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank">Oracle Next Education</a> que consiste na construção de um codificador e decodificador com JavaScript. As instruções de realização do desafio encontra-se <a href="https://www.alura.com.br/challenges/oracle-one/sprint01-construa-decodificador-texto-com-javascript" target="_blank">aqui</a></p>
