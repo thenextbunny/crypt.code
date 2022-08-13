@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/crypt.code/static/css/main.76ad78f7.css",
+    "main.css": "/crypt.code/static/css/main.edc8ac94.css",
     "main.js": "/crypt.code/static/js/main.9bf93aa1.js",
     "static/js/787.f4d7758f.chunk.js": "/crypt.code/static/js/787.f4d7758f.chunk.js",
     "static/media/girl search.svg": "/crypt.code/static/media/girl search.38001b4d48e45b01c6fba2de93553f4a.svg",
@@ -9,12 +9,12 @@
     "static/media/linkedin.svg": "/crypt.code/static/media/linkedin.f1c12b66ffafac9d23d3d0470d2f6e18.svg",
     "index.html": "/crypt.code/index.html",
     "static/media/email.svg": "/crypt.code/static/media/email.39b8f55bd3fde65e84bed498f0803cf6.svg",
-    "main.76ad78f7.css.map": "/crypt.code/static/css/main.76ad78f7.css.map",
+    "main.edc8ac94.css.map": "/crypt.code/static/css/main.edc8ac94.css.map",
     "main.9bf93aa1.js.map": "/crypt.code/static/js/main.9bf93aa1.js.map",
     "787.f4d7758f.chunk.js.map": "/crypt.code/static/js/787.f4d7758f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76ad78f7.css",
+    "static/css/main.edc8ac94.css",
     "static/js/main.9bf93aa1.js"
   ]
 }
