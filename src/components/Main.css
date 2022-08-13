@@ -9,7 +9,7 @@ main {
 	display: grid;
 	gap: 20px;
 	grid-template-areas: "field-text-area final-text-area";
-	grid-template-columns: minmax(max-content, auto) minmax(300px, 450px);
+	grid-template-columns: minmax(320px, auto) minmax(220px, 450px);
 	width: 100%;
 }
 
@@ -40,7 +40,7 @@ textarea {
 	border: none;
 	font-size: 18px;
 	flex: 1 1 auto;
-	min-height: 100px;
+	min-height: auto;
 	margin-bottom: 15px;
 	resize: vertical;
 	padding: 5px;
@@ -48,7 +48,7 @@ textarea {
 }
 
 textarea:focus {
-	outline: none;
+	outline: 1px solid gray;
 }
 
 textarea::placeholder {
@@ -56,24 +56,20 @@ textarea::placeholder {
 	font-size: 20px;
 }
 
-/* Designing for scroll-bar */
 textarea::-webkit-scrollbar {
 	width: 10px;
 }
 
-/* Track */
 textarea::-webkit-scrollbar-track {
 	background: #ced4da;
 	border-radius: 5px;
 }
 
-/* Handle */
 textarea::-webkit-scrollbar-thumb {
 	background: #343a40;
 	border-radius: 5px;
 }
 
-/* Handle on hover */
 textarea::-webkit-scrollbar-thumb:hover {
 	background: #495057;
 }
@@ -98,15 +94,26 @@ textarea::-webkit-scrollbar-thumb:hover {
 	padding: 0 10px;
 }
 
-button#encrypt {
+button#encrypt,
+button#clear-text {
 	background: #0a3871;
 	color: #ffffff;
 }
 
 button#decrypt,
-button#copyText {
+button#copy-text {
 	background: #ffffff;
 	color: #0a3871;
+}
+
+button#encrypt:hover,
+button#clear-text:hover {
+	filter: brightness(1.2);
+}
+
+button#decrypt:hover,
+button#copy-text:hover {
+	background: #808386;
 }
 
 /* With and without text */
