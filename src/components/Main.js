@@ -23,9 +23,16 @@ const Main = () => {
 
 	const encrypt = () => {
 		let encryptText = text;
-		cryption.forEach((element) => {
-			encryptText = replaceAll(encryptText, element[0], element[1]); // [0] = letter, [1] = code
-		});
+
+		for (let i = 0; i < cryption.length; i++) {
+			encryptText = replaceAll(encryptText, cryption[i][0], cryption[i][1]);
+		}
+
+		// Segundo modo
+		// cryption.forEach((element) => {
+		// encryptText = replaceAll(encryptText, element[0], element[1]); // [0] = letter, [1] = code
+		// })
+
 		return setResult(encryptText);
 	};
 
