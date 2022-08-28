@@ -55,8 +55,6 @@ const Main = () => {
 		}, 3000);
 	};
 
-	console.log(text);
-
 	return (
 		<main>
 			<div className="container">
